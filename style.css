@@ -43,8 +43,8 @@ html {
 }
 
 .food {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -110,6 +110,17 @@ html {
   position: relative;
   -webkit-transform: rotateY(20deg) skewX(-2deg);
           transform: rotateY(20deg) skewX(-2deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+          transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+  -webkit-box-shadow: 2rem 2rem 2rem #000;
+          box-shadow: 2rem 2rem 2rem #000;
 }
 
 .card::before {
