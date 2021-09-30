@@ -128,7 +128,7 @@ html {
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #000, -0.1rem -0.1rem 0.1rem #000;
           box-shadow: 0.1rem 0.1rem 0.1rem #000, -0.1rem -0.1rem 0.1rem #000;
   cursor: pointer;
-  z-index: 100;
+  z-index: 99;
   -webkit-transition: top 0.5s 0.2s;
   transition: top 0.5s 0.2s;
 }
