@@ -1,3 +1,9 @@
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelectorAll(".target").forEach((item) => {
+    item.classList.toggle("change");
+  });
+});
+
 const icons = document.querySelectorAll(".section-1-icons img");
 
 let i = 1;
